@@ -33,6 +33,13 @@ Optimize SEO`.
    is automatically updated. The old link still functions as Odoo creates a
    :ref:`301 redirect <website/pages/URL-redirection>`, maintaining the SEO.
 
+.. tip::
+   Click :guilabel:`Fill with AI` to automatically generate a meta title, a description, and benefit
+   from suggested keywords with a single click.
+
+   Remove incorrect URL's from the :guilabel:`Broken Link` field and select valid ones to
+   prevent errors.
+
 Keywords and Meta tags
 ----------------------
 

@@ -22,7 +22,7 @@ To calculate shipping on sales orders and e-commerce, the *Delivery Costs* modul
 To do so, navigate to the :menuselection:`Apps` application from the main Odoo dashboard.
 
 Then, remove the :guilabel:`Apps` filter, and type in `Delivery Costs` in the :guilabel:`Search...`
-bar. After finding the :guilabel:`Delivery Costs` module, click :guilabel:`Activate` to install it.
+bar. After finding the :guilabel:`Delivery Costs` module, click :guilabel:`Install` to install it.
 
 .. image:: setup_configuration/install-module.png
    :alt: Install the Delivery Costs module.

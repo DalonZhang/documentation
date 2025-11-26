@@ -2,16 +2,24 @@
 Invoice based on delivered or ordered quantities
 ================================================
 
-Different business policies might require different options for invoicing:
+Being able to have different invoicing options provides more flexibility. Different business
+policies might require different options for invoicing. Odoo has too invoicing options to allow
+businesses to make the best choice for their needs: *Invoice what is ordered* and *Invoice what is
+delivered*.
 
-- The *Invoice what is ordered* rule is used as the default mode in Odoo *Sales*, which means
+- The Invoice what is ordered rule is used as the default mode in Odoo **Sales**, which means
   customers are invoiced once the sales order is confirmed.
-- The *Invoice what is delivered* rule invoices customers once the delivery is done. This rule is
-  often used for businesses that sell materials, liquids, or food in large quantities. In these
-  cases, the ordered quantity may differ slightly from the delivered quantity, making it preferable
-  to invoice the quantity actually delivered.
+- The Invoice what is delivered rule invoices customers once the delivery is done. This rule is
+  often used for businesses that sell large quantities of physical goods in each sales order. In
+  these cases, the ordered quantity may differ slightly from the delivered quantity based on product
+  availability.
 
-Being able to have different invoicing options provides more flexibility.
+.. example::
+   A produce distributor using the invoice what is delivered rule sells 50 heads of lettuce to a
+   restaurant. At the time the delivery is made, only 48 heads are available. The restaurant is
+   invoiced for the 48 heads that are delivered, and later receives a second invoice for the
+   remaining 2 heads when the distributor is able to complete the order.
+
 
 Invoicing policy features
 =========================
@@ -22,64 +30,57 @@ Configuration --> Settings`, and under the :guilabel:`Invoicing` heading, select
 delivered`.
 
 .. image:: invoicing_policy/invoicing-policy-setting.png
-   :align: center
    :alt: Choosing an invoicing policy on Odoo Sales.
 
 .. important::
-   If the :guilabel:`Invoice what is delivered` rule is chosen, it is **not** possible to activate
-   the :guilabel:`Automatic Invoice` feature, which automatically generates invoices when an online
-   payment is confirmed.
+   Activating an invoicing policy rule automatically applies the chosen policy rule to all newly
+   created products. Any existing products **must** have their invoicing policy manually updated on
+   their product forms. Additionally, if the :guilabel:`Invoice what is delivered` rule is chosen,
+   it is **not** possible to activate the :guilabel:`Automatic Invoice` feature, which automatically
+   generates invoices when an online payment is confirmed.
 
-Invoicing policy on product form
-================================
+Changing the invoicing policy on product forms
+==============================================
 
-On any product page, via the :menuselection:`Sales app --> Products --> Products dashboard`, locate
-the :guilabel:`Invoicing Policy` option located under the :guilabel:`General Information` tab. It
-can be changed manually using the drop-down menu.
+First, navigate to a product page through :menuselection:`Sales app --> Products --> Products
+dashboard`. Locate the :guilabel:`Invoicing Policy` option located under the :guilabel:`General
+Information` tab. Use the drop-down menu to change the policy.
 
 .. image:: invoicing_policy/invoicing-policy-general-info-tab.png
-   :align: center
-   :alt: How to change your invoicing policy on a product form on Odoo Sales.
+   :alt: How to change invoicing policy on a product form on Odoo **Sales**.
 
 Impact on sales flow
 ====================
 
-In Odoo *Sales*, the basic sales flow starts with the creation of a quotation. Then, that quotation
-is sent to a customer. Next, it needs to be confirmed, which turns the quotation into a sales order.
-This, in turn, creates an invoice.
+In Odoo *Sales*, the basic sales flow starts with the creation of a quotation that is sent to a
+customer. Confirming the quotation creates a sales order, and confirming the sales order creates an
+invoice.
 
-The following is a breakdown of how invoicing policy rules impact the aforementioned sales flow:
+The following is a breakdown of how invoicing policy rules impact the sales flow:
 
 - :guilabel:`Invoice what is ordered`: No impact on the basic sales flow. An invoice is created as
   soon as a sale is confirmed.
 - :guilabel:`Invoice what is delivered`: Minor impact on sales flow, because the delivered quantity
-  needs to be manually entered on the sales order. Or, the *Inventory* app can be installed and used
-  to confirm the delivered quantity before creating an invoice with the *Sales* app.
+  needs to be manually entered on the sales order. Alternatively, the **Inventory** app can be
+  installed and used to confirm the delivered quantity before creating an invoice.
 
 .. warning::
-   If a user attempts to create an invoice without validating the delivered quantity, the following
-   error message appears: :guilabel:`There is no invoiceable line. If a product has a Delivered
-   quantities invoicing policy, please make sure that a quantity has been delivered.`
+   If a user attempts to create an invoice without validating the delivered quantity, the system
+   returns an error message alerting them to the issue.
 
    .. image:: invoicing_policy/invoicing-policy-error-message.png
-      :align: center
-      :alt: If Delivered Quantities invoicing policy is chosen, ensure a quantity has been delivered.
+      :alt: If Delivered Quantities invoicing policy is chosen, ensure a quantity has been
+            delivered.
 
-.. note::
-   Once a quotation is confirmed, and the status changes from :guilabel:`Quotation sent` to
-   :guilabel:`Sales order`, the delivered and invoiced quantities are available to view, directly
-   from the sales order. This is true for both invoicing policy rule options.
+Once a quotation is confirmed, and the status changes from :guilabel:`Quotation sent` to
+:guilabel:`Sales order`, the delivered and invoiced quantities are available to view, directly from
+the sales order. This is true for both invoicing policy rule options.
 
-   .. image:: invoicing_policy/invoicing-policy-order-lines.png
-      :align: center
-      :alt: How to see your delivered and invoiced quantities on Odoo Sales.
+.. image:: invoicing_policy/invoicing-policy-order-lines.png
+   :alt: How to see delivered and invoiced quantities on Odoo Sales.
 
-   Odoo automatically adds the quantities to the invoice, both :guilabel:`Delivered` and
-   :guilabel:`Invoiced`, even if it's a partial delivery, when the quotation is confirmed.
-
-Finally, there are a few different options to create an invoice: :guilabel:`Regular invoice`,
-:guilabel:`Down payment (percentage)` or :guilabel:`Down payment (fixed amount)`.
+Odoo automatically adds the quantities to the invoice, both :guilabel:`Delivered` and
+:guilabel:`Invoiced`, even if it's a partial delivery, when the quotation is confirmed.
 
 .. seealso::
-   Be sure to check out the documentation explaining down payment options to learn more:
    :doc:`/applications/sales/sales/invoicing/down_payment`

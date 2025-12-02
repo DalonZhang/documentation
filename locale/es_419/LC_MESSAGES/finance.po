@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-19 09:34+0100\n"
-"PO-Revision-Date: 2025-12-01 22:03+0000\n"
+"PO-Revision-Date: 2025-12-02 23:22+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/finance/es_419/>\n"
@@ -22666,6 +22666,9 @@ msgid ""
 "with regulations, making informed decisions, and ensuring transparency in "
 "reporting."
 msgstr ""
+"El cierre del ejercicio es indispensable para mantener precisión financiera, "
+"cumplir con las normas y regulaciones, tomar decisiones informadas y "
+"garantizar que haya transparencia en los reportes."
 
 #: ../../content/applications/finance/accounting/reporting/year_end.rst:9
 msgid ":doc:`Tax return <tax_returns>`"
@@ -72516,6 +72519,11 @@ msgid ""
 "configure additional taxes, navigate to :menuselection:`Accounting --> "
 "Configuration --> Taxes`."
 msgstr ""
+"En Estados Unidos, las tasas y lo que se considera gravable cambia según la "
+"jurisdicción. Odoo crea impuestos de *venta* y *compra* de forma "
+"predeterminada al instalar la aplicación **Contabilidad**. Para gestionar "
+"los impuestos existentes o configurar otros impuestos, ve a :menuselection:`"
+"Contabilidad --> Configuración --> Impuestos`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:243
 msgid ""
@@ -72777,6 +72785,11 @@ msgid ""
 "Activities`, :guilabel:`Financing Activities`, and :guilabel:`Investing & "
 "Extraordinary Activities`."
 msgstr ""
+"De forma predeterminada, cualquier cuenta con una de las tres "
+":guilabel:`etiquetas` predeterminadas en el tablero del :guilabel:`plan de "
+"cuentas` aparece en el reporte. Estas etiquetas son: :guilabel:`Actividades "
+"operativas`, :guilabel:`Actividades de financiamiento` y :guilabel:`"
+"Actividades de inversión y extraordinarias`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid ""
@@ -72919,6 +72932,11 @@ msgid ""
 "**Timesheets**, **Time Off**, **Employees** and **Expenses** apps, to "
 "calculate the worked hours and compensation for each employee."
 msgstr ""
+"La aplicación **Nómina** calcula el pago de cada empleado según su trabajo, "
+"vacaciones, permisos por enfermedad, prestaciones y deducciones. **Nómina** "
+"toma información de las aplicaciones **Asistencias**, **Registro de horas**, "
+"**Vacaciones**, **Empleados** y **Gastos** para calcular las horas "
+"trabajadas y la compensación de todos los empleados."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:455
 msgid ""
@@ -72974,6 +72992,12 @@ msgid ""
 "process the employee's pay. Ensure the following fields are filled out in "
 "their respective places."
 msgstr ""
+"Es importante tener la aplicación **Empleados** instalada y completar toda "
+"la información del personal. Varios campos tanto en los :ref:`registros de "
+"los empleados <l10n_us/payroll-employee-records>` y en los :ref:`contratos "
+"de los empleados <l10n_us/payroll-employee-contracts>` son necesarios para "
+"procesar la nómina de forma correcta. Asegúrate de completar los siguientes "
+"campos en cada lugar."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:480
 msgid "Employee records"
@@ -72985,6 +73009,9 @@ msgid ""
 "requires to properly process payslips, including various banking, tax, and "
 "work information."
 msgstr ""
+"Cada registro de empleado incluye información que la aplicación **Nómina** "
+"necesita para procesar los recibos de nómina de forma correcta, como "
+"información bancaria, fiscal y laboral."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:485
 msgid ""
@@ -73086,6 +73113,8 @@ msgid ""
 "Additionally, there is information that is found in an employee contract "
 "that also affects the **Payroll** app."
 msgstr ""
+"En el contrato del empleado también hay información que influye en la "
+"aplicación **Nómina**."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:520
 msgid ""
@@ -73316,6 +73345,11 @@ msgid ""
 "loads. The list can be :doc:`filtered <../../essentials/search>` to find the "
 "employees to add to the list."
 msgstr ""
+"Por último, agrega la información de las entradas de trabajo del empleado a "
+"la lista. Haz clic en :guilabel:`Agregar una línea` para abrir la ventana "
+"emergente :guilabel:`Agregar: Empleado`. Puedes :doc:`filtrar <../../"
+"essentials/search>` la lista para encontrar a los empleados que quieres "
+"agregar."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:608
 msgid ""
@@ -73479,6 +73513,9 @@ msgid ""
 "called, :guilabel:`Destination`. This information is provided by the bank or "
 "credit union."
 msgstr ""
+"Después escribe la razón social de la institución financiera en el campo "
+":guilabel:`Destino`. El banco o la cooperativa de crédito te proporcionará "
+"esta información."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:671
 msgid ""
@@ -73544,6 +73581,11 @@ msgid ""
 "financial institution. By default :guilabel:`Corporate Credit or Debit "
 "(CCD)` is selected."
 msgstr ""
+"Hay dos opciones para el siguiente campo: :guilabel:`Código de clase de "
+"entrada estándar`. Abre el menú desplegable y elige :guilabel:`Crédito o "
+"débito corporativo (CCD)` o :guilabel:`Pago y depósito preacordado (PPD)`. "
+"La institución financiera te indicará cuál elegir. :guilabel:`Crédito o "
+"débito corporativo (CCD)` aparece seleccionada de forma predeterminada."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:697
 msgid ""
@@ -73552,6 +73594,10 @@ msgid ""
 "Balanced Files`. Consult the company's accountant or financial adviser to "
 "make an informed decision for this field."
 msgstr ""
+"Por último puedes activar la opción :guilabel:`Archivos balanceados "
+"generados`. Selecciona la casilla ubicada del lado derecho de ella para "
+"habilitarlos. Consulta al contador o asesor financiero de la empresa para "
+"decidir si activar este campo o no."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:701
 msgid ""
@@ -73637,6 +73683,12 @@ msgid ""
 "listed with the :guilabel:`Generation Date`. Click the :icon:`fa-"
 "download` :guilabel:`(download)` button to download the file."
 msgstr ""
+"Después ve al pago por lotes "
+"(:menuselection:`Contabilidad --> Proveedores --> Pagos por lote`). Haz clic "
+"en el pago recién creado y luego ve a la pestaña :guilabel:`Archivo "
+"exportado`. El archivo generado aparecerá su :guilabel:`fecha de generación`"
+". Haz clic en el botón :icon:`fa-download` :guilabel:`(descargar)` para "
+"bajar el archivo."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid ""
@@ -73670,6 +73722,9 @@ msgid ""
 "banks and payment systems using XML files. It can be thought of as a "
 "universal language for money messages."
 msgstr ""
+"ISO 20022 es un estándar global para enviar información financiera entre "
+"bancos y sistemas de pago con archivos XML. Puedes verlo como un lenguaje "
+"universal para mensajes de dinero."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:755
 msgid ""
@@ -73677,12 +73732,18 @@ msgid ""
 "way, or *language*, so information is transferred correctly, making sending "
 "and receiving money faster, clearer, and safer."
 msgstr ""
+"Este estándar ayuda a que los bancos de todo el mundo se comuniquen de la "
+"misma forma o con el mismo *idioma* para transferir la información sin "
+"errores. Esto hace que enviar y recibir dinero sea más rápido, claro y "
+"seguro."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:758
 msgid ""
 "In Odoo, ISO 20022 files are generated from :ref:`batch payments <l10n_us/"
 "batch-payment>`."
 msgstr ""
+"En Odoo, los archivos ISO 20022 se generan desde los :ref:`pagos por lotes <"
+"l10n_us/batch-payment>`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:761
 msgid "Configurations"
@@ -73696,6 +73757,11 @@ msgid ""
 "banking information for all :ref:`recipients <l10n_us/contact-info-"
 "recipient>`."
 msgstr ""
+"Antes de crear registros ISO 20022 es necesario configurar varias cosas, "
+"como los :ref:`ajustes generales <l10n_us/settings>`, la información de "
+"contacto de la :ref:`empresa <l10n_us/contact-info-company>` y la "
+"información de contacto y bancaria de todos los :ref:`destinatarios <l10n_us/"
+"contact-info-recipient>`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:771
 msgid "Settings"
@@ -73707,6 +73773,9 @@ msgid ""
 "Settings`, scroll to the :guilabel:`Customer Payment` section, and enable "
 "the :guilabel:`Batch Payments` option."
 msgstr ""
+"Primero, ve a :menuselection:`Contabilidad --> Configuración --> Ajustes`, "
+"dirígete a a la sección :guilabel:`Pago de cliente` y activa la función "
+":guilabel:`Pagos por lote`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:776
 msgid ""
@@ -73717,6 +73786,11 @@ msgid ""
 "information entered is required by the bank to identify the account, and is "
 "added to the XML file."
 msgstr ""
+"Después ve a la sección :guilabel:`Pagos de proveedor` y activa la función "
+":guilabel:`Transferencia de crédito SEPA / ISO20022`. Al activarla aparecen "
+"tres campos: :guilabel:`Tu empresa`, :guilabel:`Identificación del nombre` y "
+":guilabel:`Emisor`. Ingresa la información en estos campos, ya que el banco "
+"la necesita para identificar la cuenta y será parte del archivo XML."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:781
 msgid "Click :guilabel:`Save` after making changes."
@@ -73727,12 +73801,16 @@ msgid ""
 "The settings configured for the ISO 20022 in the Accounting app settings "
 "page."
 msgstr ""
+"Los ajustes configurados para ISO 20022 en la página de ajustes de la "
+"aplicación Contabilidad."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:787
 msgid ""
 "The :guilabel:`Name Identification` and :guilabel:`Issuer` information are "
 "typically provided by the bank."
 msgstr ""
+"La información de :guilabel:`Identificación del nombre` y :guilabel:`Emisor` "
+"suele proporcionarla el banco."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:795
 msgid ""
@@ -73743,10 +73821,15 @@ msgid ""
 "the :guilabel:`Address` fields are fully configured in "
 "the :guilabel:`General Information` tab."
 msgstr ""
+"Asegúrate de que la dirección de la empresa sea correcta, ya que los "
+"archivos XML generados incluyen la dirección. Ve a :menuselection:`Ajustes --"
+"> Usuarios y empresas --> Empresas` y haz clic en la empresa para abrir su "
+"formulario. Verifica que los campos de la sección :guilabel:`Dirección` de "
+"la pestaña :guilabel:`Información general` sean correctos y estén completos."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid "The company record with address information completed."
-msgstr ""
+msgstr "El registro de la empresa con los datos de la dirección completos."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:806
 msgid "Recipient information"
@@ -73759,10 +73842,17 @@ msgid ""
 "that receives payments, both persons and companies, includes "
 "complete :guilabel:`Address` information in the top-half of the contact form."
 msgstr ""
+"El archivo XML generado incluye la dirección y la información bancaria de "
+"*todos* los destinatarios. Abre la aplicación **Contactos** y asegúrate de "
+"que cada registro de contacto que recibe pagos, tanto personas como "
+"empresas, tenga la información completa en los campos de la sección "
+":guilabel:`Dirección` en la parte superior del formulario."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid "The contact record for a company with address information completed."
 msgstr ""
+"El registro de contacto de una empresa con la información de dirección "
+"completa."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:815
 msgid ""
@@ -73770,6 +73860,10 @@ msgid ""
 "trusted bank account populates the :guilabel:`Banks` field. If no bank is "
 "listed, add a :ref:`new bank account <l10n_us/add-bank>`."
 msgstr ""
+"Después, haz clic en la pestaña :guilabel:`Contabilidad` y asegúrate de que "
+"haya al menos una cuenta bancaria confiable en el campo :guilabel:`Bancos`. "
+"Si no aparece ninguna, agrega una :ref:`nueva cuenta bancaria <l10n_us/add-"
+"bank>`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:822
 msgid "Add a bank account"
@@ -73784,16 +73878,24 @@ msgid ""
 "loads. Fill out the following fields on the form, then "
 "click :guilabel:`Save`:"
 msgstr ""
+"Para agregar una cuenta bancaria a un registro de contacto, abre la "
+"aplicación **Contactos**, haz clic en el contacto y luego ve a la pestaña "
+":guilabel:`Contabilidad`. Haz clic en el campo vacío junto a "
+":guilabel:`Bancos`, haz clic en :guilabel:`Crear...` y aparecerá una ventana "
+"emergente llamada :guilabel:`Crear bancos`. Completa los siguientes campos "
+"del formulario y luego haz clic en :guilabel:`Guardar`:"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:829
 msgid ":guilabel:`Account Number`: Enter the bank account number."
-msgstr ""
+msgstr ":guilabel:`Número de cuenta`: Ingresa el número de cuenta bancaria."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:830
 msgid ""
 ":guilabel:`ABA/Routing Number`: Enter the ABA or routing number for the "
 "account."
 msgstr ""
+":guilabel:`Número ABA / de ruta`: Ingresa el número ABA o de ruta de la "
+"cuenta."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:831
 msgid ""
@@ -73801,6 +73903,9 @@ msgid ""
 "the bank account. The contact name (person or company) populates this field "
 "by default."
 msgstr ""
+":guilabel:`Titular de la cuenta`: Usa el menú desplegable para seleccionar a "
+"la persona titular de la cuenta. Este campo incluye el nombre del contacto "
+"(persona o empresa) de forma predeterminada."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:833
 msgid ""
@@ -73809,6 +73914,10 @@ msgid ""
 "clicking :guilabel:`Search more...` then click :guilabel:`New`, and fill out "
 "the :guilabel:`Create Bank` form."
 msgstr ""
+":guilabel:`Banco`: Usa el menú desplegable para seleccionar el banco de la "
+"cuenta. Si el banco no aparece en la lista, crea uno nuevo con :guilabel:`"
+"Buscar más...`, luego haz clic en :guilabel:`Nuevo` y completa el formulario "
+":guilabel:`Crear banco`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:836
 msgid ""
@@ -73817,19 +73926,25 @@ msgid ""
 "**not** set to trusted, an error appears when attempting to make a payment "
 "to the contact."
 msgstr ""
+":guilabel:`Enviar dinero`: Asegúrate de que este botón tenga la opción "
+":guilabel:`Confiable` activa. El botón y el texto serán de color verde si la "
+"cuenta bancaria es confiable. Si **no** la marcas como confiable aparecerá "
+"un error cuando intentes pagarle al contacto."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid "Bank information on the Create Banks form."
-msgstr ""
+msgstr "Información bancaria en el formulario Crear bancos."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:844
 msgid ""
 "Trusted bank accounts appear in green in the :guilabel:`Accounting` tab."
 msgstr ""
+"Las cuentas bancarias confiables aparecen de color verde en la pestaña "
+":guilabel:`Contabilidad`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:0
 msgid "A trusted bank account on a contact form."
-msgstr ""
+msgstr "Una cuenta bancaria confiable en un formulario de contacto."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:850
 msgid "Bank journal settings"
@@ -73844,6 +73959,11 @@ msgid ""
 "the :guilabel:`Payment Method` column, both `ISO20022` and `U.S. ISO20022` "
 "appear."
 msgstr ""
+"Asegúrate de que los métodos de pago ISO aparezcan en el diario bancario y "
+"que estén configurados de forma correcta. Ve a :menuselection:`Contabilidad "
+"--> Configuración --> Diarios` y haz clic en el diario :guilabel:`Banco`. "
+"Haz clic en la pestaña :guilabel:`Pagos salientes` y confirma que en la "
+"columna :guilabel:`Método de pago` aparezcan `ISO20022` y `U.S. ISO20022`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:857
 msgid ""
@@ -73851,6 +73971,9 @@ msgid ""
 "Payments` account selected in the :guilabel:`Outstanding Payments accounts` "
 "column. This allows Odoo to create journal entries for payments."
 msgstr ""
+"Luego confirma que todas las entradas tengan la cuenta :guilabel:`101404 "
+"Pagos pendientes` en la columna :guilabel:`Cuentas de pagos pendientes`. "
+"Esto permite que Odoo cree asientos contables para los pagos."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:862
 msgid "ISO20022 vs U.S. ISO20022"
@@ -73861,12 +73984,16 @@ msgid ""
 "The U.S. ISO20022 is similar to the ISO standard, with some U.S.-specific "
 "rules and formatting."
 msgstr ""
+"U.S. ISO20022 funciona igual que el estándar ISO, con reglas y formato "
+"específicos de Estados Unidos."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:867
 msgid ""
 "The U.S. ISO20022 uses ABA routing numbers, which are specific to the U.S., "
 "while the generic ISO20022 uses IBAN numbers."
 msgstr ""
+"U.S. ISO20022 usa números de ruta ABA, exclusivos de Estados Unidos, "
+"mientras que el ISO20022 genérico usa números IBAN."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:874
 msgid "Feature"
@@ -73874,11 +74001,11 @@ msgstr "Destacado"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:875
 msgid "Global ISO 20022"
-msgstr ""
+msgstr "ISO 20022 global"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:876
 msgid "U.S. ISO 20022"
-msgstr ""
+msgstr "ISO 20022 de Estados Unidos"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:877
 msgid "Developed by"
@@ -73906,11 +74033,11 @@ msgstr "Pagos nacionales en EE. UU."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:884
 msgid "XML-based standard"
-msgstr ""
+msgstr "Estándar basado en XML"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:885
 msgid "XML (same base) with U.S. data rules"
-msgstr ""
+msgstr "XML (misma base) con reglas de datos de Estados Unidos"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:886
 msgid "Examples"
@@ -73918,11 +74045,11 @@ msgstr "Ejemplos"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:887
 msgid "SEPA Credit Transfer (Europe), SWIFT MX messages"
-msgstr ""
+msgstr "Transferencia de crédito SEPA (Europa), mensajes SWIFT MX"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:888
 msgid "Fedwire ISO 20022, CHIPS ISO 20022"
-msgstr ""
+msgstr "Fedwire ISO 20022, CHIPS ISO 20022"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:889
 msgid "Differences"
@@ -73937,12 +74064,16 @@ msgid ""
 "Trimmed or modified to fit U.S. needs (e.g., ABA routing numbers instead of "
 "IBANs)"
 msgstr ""
+"Versión adaptada para las necesidades de Estados Unidos "
+"(por ejemplo, números de ruta ABA en lugar de IBAN)"
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:894
 msgid ""
 "It is recommended to use the generic ISO20022 for *international* transfers, "
 "and use the U.S. ISO20022 for *domestic* transfers."
 msgstr ""
+"Lo más recomendable es usar el ISO20022 genérico para las transferencias "
+"*internacionales* y U.S. ISO20022 para transferencias *nacionales*."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:900
 msgid ""
@@ -73952,10 +74083,15 @@ msgid ""
 "the drop-down menu, select :guilabel:`ISO20022` in the :guilabel:`Payment "
 "Method` field, then click :guilabel:`Create Payment`."
 msgstr ""
+"Primero :ref:`crea <accounting/vendor_bills/creation>` y :ref:`confirma <"
+"accounting/vendor_bills/bill-confirmation>` una factura de proveedor, luego "
+"haz clic en el botón :guilabel:`Pagar` para abrir la ventana emergente "
+":guilabel:`Pagar`. Con el menú desplegable selecciona :guilabel:`ISO20022` "
+"en el campo :guilabel:`Método de pago` y haz clic en :guilabel:`Crear pago`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid "The Pay pop-up window configured for ISO20022."
-msgstr ""
+msgstr "La ventana emergente Pagar configurada para ISO20022."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:908
 msgid ""
@@ -73967,16 +74103,26 @@ msgid ""
 "stage, and the U.S. ISO20022 XML file is created and added to the chatter. "
 "The XML file can be downloaded and used to initiate a bank payment."
 msgstr ""
+"Ahora aparecerá la cinta verde :guilabel:`En proceso de pago` en la factura "
+"de proveedor. Después, ve a :menuselection:`Contabilidad --> Proveedores --> "
+"Pagos` y selecciona la casilla junto al pago realizado con el archivo "
+"ISO20022 para elegirlo. Haz clic en :guilabel:`Crear lote` y luego haz clic "
+"en :guilabel:`Validar` en el formulario del lote. Una vez validado, el pago "
+"por lote pasará a la etapa :guilabel:`Enviado` y el sistema creará el "
+"archivo XML U.S. ISO20022 y lo agregará al chatter. Puedes descargar el "
+"archivo XML y usarlo para iniciar un pago bancario."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:-1
 msgid "A batch payment with the XML file in the chatter."
-msgstr ""
+msgstr "Un pago por lote con el archivo XML en el chatter."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:918
 msgid ""
 "Once the XML file is created, the following steps occur **outside** of the "
 "Odoo database."
 msgstr ""
+"Después de crear el archivo XML, los siguientes pasos ocurren **fuera** de "
+"la base de datos de Odoo."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:920
 msgid ""
@@ -73985,6 +74131,10 @@ msgid ""
 "Upload the XML ISO 20022 file created by Odoo (ending in `.xml`) and upload "
 "it to the bank system."
 msgstr ""
+"Ingresa al portal en línea o al sistema de pagos del banco. La mayoría de "
+"los bancos que aceptan ISO 20022 tienen una sección especial para `cargar "
+"archivos` o `importar pagos`. Sube el archivo XML de ISO 20022 que creó Odoo "
+"(termina en `.xml`) y cárgalo al sistema del banco."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:924
 msgid ""
@@ -73992,12 +74142,18 @@ msgid ""
 "(accounts, amounts, etc.) are valid. The list of payments appears inside the "
 "file. Review and confirm the information, then click `Approve` or `Submit`."
 msgstr ""
+"El banco revisa el archivo XML y confirma que todos los detalles "
+"(cuentas, importes y más) sean válidos. La lista de pagos aparece dentro del "
+"archivo. Revisa y confirma la información y luego haz clic en `Aprobar` o "
+"`Enviar`."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:928
 msgid ""
 "The bank processes each payment in the file and transfers the funds to the "
 "recipients."
 msgstr ""
+"El banco procesa cada pago del archivo y transfiere los fondos a los "
+"destinatarios."
 
 #: ../../content/applications/finance/fiscal_localizations/uruguay.rst:3
 msgid "Uruguay"
@@ -78985,6 +79141,9 @@ msgid ""
 "and :guilabel:`Secret Key` fields with the information saved at the "
 "step :ref:`payment_providers/redsys/configure_redsys`."
 msgstr ""
+"Completa los campos :guilabel:`Código de comerciante`, :guilabel:`Terminal "
+"del comerciante` y :guilabel:`Clave secreta` con la información almacenada "
+"en el paso :ref:`payment_providers/redsys/configure_redsys`."
 
 #: ../../content/applications/finance/payment_providers/redsys.rst:41
 msgid ""

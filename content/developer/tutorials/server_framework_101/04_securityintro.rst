@@ -2,22 +2,18 @@
 Chapter 4: Security - A Brief Introduction
 ==========================================
 
-In the :doc:`previous chapter <03_basicmodel>`, we created our first table
-intended to store business data. In a business application such as Odoo, one of the first questions
-to consider is who\ [#who]_ can access the data. Odoo provides a security mechanism to allow access
-to the data for specific groups of users.
+在:doc:`上一章节 <03_basicmodel>`， 我们创建了第一个用于存储业务数据表。在Odoo这样的业务应用程序中, 第一个需要考虑的问题就是谁\ [#who]_ 能够访问这个数据。 Odoo提供了一种安全机制来允许访问
+到特定用户组的数据。
 
-The topic of security is covered in more detail in :doc:`../restrict_data_access`. This chapter aims
-to cover the minimum required for our new module.
+涉及安全话题的更详细内容将会在 :doc:`../restrict_data_access`介绍.。本章的目标是介绍关于我们新模块的最小的必要的安全相关内容。
 
-Data Files (CSV)
+数据文件 (CSV)
 ================
 
-Odoo is a highly data driven system. Although behavior is customized using Python code, part of a
+Odoo是一个高度数据驱动的系统。尽管我们通过Python代码定义行为，且模块值的一部分存在于加载时所设置的数据中。一种方式是通过CSV文件进行加载。 Although behavior is customized using Python code, part of a
 module's value is in the data it sets up when loaded. One way to load data is through a CSV
-file. One example is the `list of country states
-<{GITHUB_PATH}/odoo/addons/base/data/res.country.state.csv>`_ which is loaded at installation of the
-`base` module.
+file. 就像例子中的 `国家清单
+<{GITHUB_PATH}/odoo/addons/base/data/res.country.state.csv>`_ 就是在`base` 模块安装时才被加载。
 
 .. code-block:: text
 
